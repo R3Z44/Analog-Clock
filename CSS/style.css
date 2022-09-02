@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: url("../Images/Clock\ 3.png");
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #5862AB;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.clock .seconds{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+}
+
+.seconds::before{
+    content: url("../Images/Seconds\ hand\ 2.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-size: cover ;
+    bottom: 151px;
+}
+
+.clock .minutes{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+.minutes::before{
+    content: url("../Images/Minutes\ hand\ 2.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-size: inset;
+}
+
+.clock .hours{
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.hours::before{
+    content: url("../Images/Hour\ hand\ 2.png");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-size: cover ;
+    
+}
+
+#reza{
+    width: 200px;
+    height: 30px;
+    color: #336668;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    left: 125px;
+}
